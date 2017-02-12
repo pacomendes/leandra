@@ -49,9 +49,47 @@ p {
   background-color: #222222;
   color: white;
 }
-.text-faded {
+.about {
+  margin: 20px 0;
+  text-align: center;
+}
+.about p {
   color: rgba(255, 255, 255, 0.7);
 }
+
+.profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-pic {
+    float: right;
+  }
+
+  .about {
+    text-align: left;
+  }
+}
+
+.contact-option {
+  margin:20px 0;
+}
+
+.physical-address {
+  margin-bottom: 30px;
+}
+.physical-address p, i {
+  margin-bottom: 5px;
+}
+
 section {
   padding: 100px 0;
 }
@@ -105,6 +143,11 @@ aside {
 .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
 }
+
+.header-content-inner h1 {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
@@ -145,6 +188,10 @@ aside {
   .navbar-default.affix .nav > li > a:focus:hover {
     color: #F05F40;
   }
+
+  .header-content-inner h1 {
+    display: block;
+  }
 }
 header {
   position: relative;
@@ -155,22 +202,18 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('https://cdn.hyperdev.com/us-east-1%3Afa026dbf-3051-4d35-bcca-f741b083268d%2Fheader.jpg');
+  background-image: url('../images/header.jpg');
   text-align: center;
   color: white;
 }
 header .header-content {
   position: relative;
   text-align: center;
-  padding: 100px 15px 100px;
+  padding: 200px 15px 100px;
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 30px;
+  display : none;
 }
 header .header-content .header-content-inner hr {
   margin: 30px auto;
@@ -179,7 +222,7 @@ header .header-content .header-content-inner p {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   header {
@@ -187,7 +230,7 @@ header .header-content .header-content-inner p {
   }
   header .header-content {
     position: absolute;
-    top: 50%;
+    top: 65%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -197,9 +240,15 @@ header .header-content .header-content-inner p {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+
   }
   header .header-content .header-content-inner h1 {
+    display: block;
     font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   header .header-content .header-content-inner p {
     font-size: 18px;

@@ -1,0 +1,29 @@
+{
+  "name": "leandra",
+  "version": "1.0.0",
+  "description": "Personal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pacomendes/leandra.git"
+  },
+  "keywords": [
+    "psychology"
+  ],
+  "author": "leandra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pacomendes/leandra/issues"
+  },
+  "homepage": "https://github.com/pacomendes/leandra#readme",
+  "dependencies": {
+    "watch-http-server" : "0.7.6"
+  },
+  "scripts": {
+    "start": "node ./node_modules/watch-http-server/bin/http-server"
+  }
+}
+
